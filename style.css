@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "architects_daughter";
+    src: url("./architects_daughter/ArchitectsDaughter.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('webfont.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
+
+body, html {
+    background-color: #f3f3f3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: papayawhip;
+}
+
+.site-header {
+    width: 100%;
+    margin: -50px auto 0 auto;
+    height: 50px;
+    background-color: palevioletred;
+    position: absolute;
+    z-index: 3;
+}
+
+.menu-toggle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 40px;
+    left: calc(50% - 75px);
+    background: palevioletred;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -moz-transform: translateY(-50%) rotate(45deg);
+    -o-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger {
+    position: relative;
+    left: calc(50% - 5px);
+    top: 50%;
+    color: papayawhip;
+    transform: rotate(-45deg);
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: papayawhip;
+}
+
+.hamburger.hamburger--spin.is-active {
+    outline: none;
+}
+
+.hamburger.hamburger--spin {
+    outline: none;
+}
+
+main {
+    background-color: papayawhip;
+    height: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slidedown-menu {
+    overflow: auto;
+    color: #4a4a4a;
+    background: palevioletred;
+    z-index: 999;
+    display: none;
+    margin: 1% auto;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-list li {
+    color: papaywhip;
+    font-size: 2em;
+    margin-bottom: 7%;
+    text-transform: uppercase;
+}
+
+.nav-list li a {
+    color: papayawhip;
+}
+
+
+/*Main*/
+
+.address {
+    text-align: center;
+    margin-top: 175px;
+    font-family: "architects_daughter";
+}
+
+#typed {
+    line-height: 2;
+    color: palevioletred;
+}
+
+
+/*Typed*/
+.typed-cursor {
+  display: none;
+}
+
+/*.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
