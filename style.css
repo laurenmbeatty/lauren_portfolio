@@ -3,18 +3,6 @@
     src: url("./architects_daughter/ArchitectsDaughter.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: 'MyWebFont';
-    src: url('webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-    url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('webfont.svg#svgFontName') format('svg');
-    /* Legacy iOS */
-}
-
 body, html {
     background-color: #f3f3f3;
     height: 100%;
@@ -29,7 +17,7 @@ body, html {
     flex-direction: column;
     background-color: papayawhip;
 }
-
+/*Header*/
 .site-header {
     width: 100%;
     margin: -50px auto 0 auto;
@@ -38,7 +26,7 @@ body, html {
     position: absolute;
     z-index: 3;
 }
-
+/*Triangle*/
 .menu-toggle {
     width: 150px;
     height: 150px;
@@ -52,7 +40,9 @@ body, html {
     -ms-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
 }
+/*xTriangle*/
 
+/*Hamburger*/
 .hamburger {
     position: relative;
     left: calc(50% - 5px);
@@ -72,14 +62,8 @@ body, html {
 .hamburger.hamburger--spin {
     outline: none;
 }
-
-main {
-    background-color: papayawhip;
-    height: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
-
+/*xHamburger*/
+/*Navigation*/
 .slidedown-menu {
     overflow: auto;
     color: #4a4a4a;
@@ -105,10 +89,16 @@ main {
 .nav-list li a {
     color: papayawhip;
 }
+/*xNavigation*/
 
-
+/*xHeader*/
 /*Main*/
-
+main {
+    background-color: papayawhip;
+    height: 2000px;
+    width: 100%;
+    margin: 0 auto;
+}
 .address {
     text-align: center;
     margin-top: 175px;
@@ -119,52 +109,8 @@ main {
     line-height: 2;
     color: palevioletred;
 }
-
-
-/*Typed*/
 .typed-cursor {
-  display: none;
+    display: none;
 }
 
-/*.typed-cursor {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}*/
+/*xMain*/
