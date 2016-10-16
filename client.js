@@ -13,7 +13,7 @@ $(document).ready(function() {
         } else {
             $(this).toggleClass("is-active");
             $(".site-header").animate({
-                height: "1000px"
+                height: "2000px"
             }, {
                 duration: 500,
                 queue: false
