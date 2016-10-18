@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  //site menu
     $(".hamburger").on("click", function() {
 
         if ($(".slidedown-menu").is(":visible")) {
@@ -23,8 +24,16 @@ $(document).ready(function() {
         }
     });
 
+
+    //typing
     $("#typed").typed({
         stringsElement: $('#typed-strings')
+    });
+
+    //click events for envelopes
+    $("#envelope").on("click", function() {
+      alert("made it");
+      $(this).children("#card").toggleClass("active");
     });
 
 
