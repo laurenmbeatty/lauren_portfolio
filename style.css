@@ -152,11 +152,11 @@ main {
 }
 
 .portfolio-image {
-    background: url("./images/toro.png") no-repeat;
+    background: url("./images/Apple iPad Mini 4 Gold.png") no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     width: 200px;
-    height: 150px;
+    height: 400px;
 }
 
 /*Writings*/
