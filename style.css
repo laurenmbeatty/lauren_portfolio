@@ -189,6 +189,7 @@ body { height: 100%; width: 100%; overflow:hidden;}*/
     border-width: 0 150px 100px 150px;
     border-color: transparent transparent #256a98 transparent;
     box-shadow: 0 100px 0 0 #256a98, 0 150px 90px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .envelope:after, .envelope:before {
