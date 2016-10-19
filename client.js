@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  //site menu
+    //site menu
     $(".hamburger").on("click", function() {
 
         if ($(".slidedown-menu").is(":visible")) {
@@ -31,10 +31,18 @@ $(document).ready(function() {
     });
 
     //click events for envelopes
-    $("#envelope").on("click", function() {
-      alert("made it");
-      $(this).children("#card").toggleClass("active");
+    $(".envelope").on("click", function() {
+        $(this).children(".card").toggleClass("active");
     });
+
+    //hover events for envelopes
+    $(".envelope").on("mouseenter", function() {
+        $(this).children(".card").addClass("active");
+    });
+    $(".envelope").on("mouseleave", function() {
+        $(this).children(".card").removeClass("active");
+    });
+
 
 
 });
