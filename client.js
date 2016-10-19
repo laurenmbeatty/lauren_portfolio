@@ -30,10 +30,12 @@ $(document).ready(function() {
         stringsElement: $('#typed-strings')
     });
 
-    //click events for envelopes
-    $(".envelope").on("click", function() {
+    //click events for envelopes---mobile
+    //on-click is slow and requires two taps to fire
+    $(".envelope").on("touchstart", function() {
         $(this).children(".card").toggleClass("active");
     });
+
 
     //hover events for envelopes
     $(".envelope").on("mouseenter", function() {
