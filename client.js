@@ -45,6 +45,11 @@ $(document).ready(function() {
         $(this).children(".card").removeClass("active");
     });
 
-
+  
+    $(".portfolio-button").on("click", function(){
+      $(this).toggleClass("active");
+      $(this).find(".fa-plus").toggleClass("active");
+      $(this).next().next(".portfolio-skills").toggleClass("active");
+    })
 
 });

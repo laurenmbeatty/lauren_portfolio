@@ -83,6 +83,7 @@ body, html {
     overflow: auto;
     color: #4a4a4a;
     background: #c5376d;
+    position: relative;
     z-index: 999;
     display: none;
     margin: 1% auto;
@@ -103,6 +104,10 @@ body, html {
 
 .nav-list li a {
     color: papayawhip;
+    text-decoration: none;
+}
+.nav-list li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -141,14 +146,39 @@ main {
 
 .portfolio-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     width: 85%;
-    margin: 15% auto 0 auto;
+    margin: 10% auto 0 auto;
+    align-items: center;
 }
 
 .portfolio-item {
     margin: 0 0 20px 0;
+    width: 400px;
+    height: 288px;
+    position: relative;
+}
+
+.portfolio-skills {
+    width: 400px;
+    height: 0;
+    transform: translate(0, -100%);
+    background: #256a98;
+    color: papayawhip;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.portfolio-skills.active{
+  height: 288px;
+}
+.portfolio-skills-container {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .portfolio-image {
@@ -157,6 +187,37 @@ main {
     background-size: contain;
     width: 400px;
     height: 288px;
+}
+
+.portfolio-button {
+    position: absolute;
+    left: 88%;
+    bottom: 42%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+    text-align: center;
+    background-color: #c5376d;
+    transition: background-color 0.1s ease-in-out;
+    -webkit-appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+.portfolio-button.active {
+  background-color: papayawhip;
+  -webkit-appearance: none;
+  outline: none;
+}
+.fa-plus {
+  color: papayawhip;
+  font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
+}
+.fa-plus.active {
+  color: #256a98;
+  transform: rotate(224deg);
 }
 
 
@@ -174,13 +235,14 @@ body { height: 100%; width: 100%; overflow:hidden;}*/
 
 .writings-content-wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
     margin: 50px auto 0;
 }
 
 .envelope {
-    margin: 100px auto 120px;
+    margin: 100px auto 140px;
     position: relative;
     width: 0;
     height: 0;
@@ -239,7 +301,7 @@ body { height: 100%; width: 100%; overflow:hidden;}*/
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 130px 0 0 0;
+    padding: 100px 0 0 0;
     color: #919499;
 }
 
@@ -253,7 +315,7 @@ body { height: 100%; width: 100%; overflow:hidden;}*/
     width: 100px;
     height: 90px;
     left: 80px;
-    bottom: 135px;
+    bottom: 160px;
 }
 
 .heart:before, .heart:after {
